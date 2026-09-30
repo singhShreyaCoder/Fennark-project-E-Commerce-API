@@ -1,0 +1,30 @@
+### Get all products
+GET http://localhost:5000/api/product
+
+### Get product by ID
+GET http://localhost:5000/api/product/68d7a4f2e497d6e280b58d3d
+
+### Create product
+POST http://localhost:5000/api/product
+Content-Type: application/json
+
+{
+  "Name": "Wireless Bluetooth Headphones",
+  "Description": "High-quality over-ear headphones with noise cancellation and 30-hour battery life.",
+  "Price": 4999,
+  "Category": "Electronics",
+  "Image": "https://example.com/images/wireless-headphones.jpg",
+  "Stock": 40
+}
+
+### Update product
+PUT http://localhost:5000/api/product/68d7a4f2e497d6e280b58d3d
+Content-Type: application/json
+
+{
+  "Price": 11999,
+  "Stock": 20
+}
+
+### Delete product
+DELETE http://localhost:5000/api/product/68d7a4f2e497d6e280b58d3d
